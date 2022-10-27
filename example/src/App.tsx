@@ -1,25 +1,22 @@
 import * as React from 'react';
 
-import { StyleSheet, View } from 'react-native';
+import { Dimensions, StyleSheet } from 'react-native';
 import { AwesomeLibraryView } from 'react-native-awesome-library';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <AwesomeLibraryView color="#32a852" style={styles.box} />
-    </View>
+    <AwesomeLibraryView
+      items={['teste 3', 'item 22']}
+      color="#32a852"
+      style={styles.list}
+      onPress={(event) => console.log(event.nativeEvent)}
+    />
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
+  list: {
+    width: Dimensions.get('screen').width,
+    height: Dimensions.get('screen').height,
   },
 });
