@@ -1,3 +1,11 @@
+//
+//  AwesomeLibraryViewManager.swift
+//  AwesomeLibrary
+//
+//  Created by Gustavo Harff on 28/10/22.
+//  Copyright © 2022 Facebook. All rights reserved.
+//
+
 @objc(AwesomeLibraryViewManager)
 class AwesomeLibraryViewManager: RCTViewManager {
 
